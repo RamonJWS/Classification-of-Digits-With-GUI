@@ -28,8 +28,13 @@ The SVC with tuned parameters and five fold cross validation managed to achieve 
 
 ## GUI
 
-Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is overfitted, and therefore, doesnt generalize well as its variance in cross validation scores was tight. The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
+Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is unable to generalize well as its variance in cross validation was small (+/-0.5%). The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
 
 ## Model Robustness
+
+Testing Robustness for "2":
+<p align="center">
+  <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_1.PNG" width=1500>
+</p>
 
 
