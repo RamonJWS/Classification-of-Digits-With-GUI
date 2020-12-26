@@ -36,4 +36,10 @@ Testing Robustness for "2":
 
 <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_3.PNG" width=250>
 
+Testing Robustness for "7":
 
+<img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_3.PNG" width=250>
+
+Testing Robustness for "3":
+
+<img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_3.PNG" width=250>
