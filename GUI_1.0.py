@@ -15,30 +15,26 @@ height=600
 image_name = "digit.png"
 image_size = (28,28)
 
-df = pd.read_csv("C:/Users/UKGC/Python/Data/Supervised Learning Projects/Digit Classification/train.csv")
-X = df.drop(labels="label", axis = 1)
-y = df["label"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=7)
 load_model = pickle.load(open("Classifier_Model_NOPCA.sav", "rb"))
-#pca = PCA(n_components=100).fit(X_train)
 
 def draw(event):
-   python_green = "#000000"
-   pen_size = 10
-   x1, y1 = ( event.x - pen_size ), ( event.y - pen_size )
-   x2, y2 = ( event.x + pen_size ), ( event.y + pen_size )
-   draw_canvas.create_oval( x1, y1, x2, y2, fill = python_green )   
+    python_green = "#000000"
+    pen_size = 10
+    x1, y1 = ( event.x - pen_size ), ( event.y - pen_size )
+    x2, y2 = ( event.x + pen_size ), ( event.y + pen_size )
+    draw_canvas.create_oval( x1, y1, x2, y2, fill = python_green )   
 
 def collect_image():   
     # the code below find the x,y position of the top and bottom corner of the draw_canvas
-    x = draw_canvas.winfo_rootx() +5
-    y = draw_canvas.winfo_rooty() +5
-    x1 = x + draw_canvas.winfo_width() -10 
-    y1 = y + draw_canvas.winfo_height() -10
+    x = draw_canvas.winfo_rootx() + 5
+    y = draw_canvas.winfo_rooty() + 5
+    x1 = x + draw_canvas.winfo_width() - 10 
+    y1 = y + draw_canvas.winfo_height() - 10
     
     # grab a screen capture of the area specified above.
     ImageGrab.grab(bbox=(x,y,x1,y1)).save(image_name)
     image = np.array(ImageGrab.grab(bbox=(x,y,x1,y1)))
+    
     # Call the model image_conversion method
     image_conversion()
     
@@ -59,9 +55,6 @@ def prediction(image_matrix):
         for jdx, j in enumerate(i):
             image_matrix[idx][jdx] = abs(j-255)
     
-    #print(image_matrix)
-    
-    #X_test = pca.transform(image_matrix.reshape(1,784))
     batch = image_matrix.reshape(1,784)
     prediction = load_model.predict(batch)[0]
     print_prediction(prediction)
@@ -84,7 +77,7 @@ canvas.pack()
 
 # Create Drawing Frame
 frame_draw = Frame(root)
-frame_draw.place(relx = 0.05, rely = 0.3, relwidth=0.4, relheight=0.6)
+frame_draw.place(relx = 0.05, rely = 0.3, relwidth=0.4, relheight=0.53)
 
 # Create Canvas on Drawing Frame
 draw_canvas = Canvas(frame_draw, bg = "#ffffff")
@@ -93,7 +86,7 @@ draw_canvas.bind( "<B1-Motion>", draw)
 
 # Create Output Frame
 frame_output = Frame(root)
-frame_output.place(relx = 0.55, rely = 0.3, relwidth=0.4, relheight=0.6)
+frame_output.place(relx = 0.55, rely = 0.3, relwidth=0.4, relheight=0.53)
 
 # Button for Classification
 classify_button = Button(root, text = "Classify", command = collect_image, bg = "#D2D2D2")
