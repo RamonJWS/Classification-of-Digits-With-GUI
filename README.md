@@ -1,5 +1,9 @@
 <h1 align='center'> Classification of Handwritten Digits and GUI for Testing </h1>
 
+## Summary
+
+Using a SVC to classify handwritten digits to a 98.2% accuracy, this model was then deployed and used in an interactive GUI which can be seen here: https://www.youtube.com/watch?v=lJp8DtptZk4
+
 ## Project Motivation
 
 Often information about people is collected using forms which require the user to manually fill in questions and contact information. This information is then manually entered into a system to allow for the full use of the data provided. This is a long an tedious task which cost businesses, and ensure consistent boredom for their employees. 
@@ -25,3 +29,7 @@ The SVC with tuned parameters and five fold cross validation managed to achieve 
 ## GUI
 
 Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is overfitted, and therefore, doesnt generalize well as its variance in cross validation scores was tight. The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
+
+## Model Robustness
+
+
