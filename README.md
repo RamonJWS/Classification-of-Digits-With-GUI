@@ -10,7 +10,7 @@ Often information about people is collected using forms which require the user t
 
 One step in solving this problem is to create a system that can automatically read these characters, is to develop a system capable of readin digits. Perhaps in the future I will also look at including alphabetical classification.
 
-By using computer vision techniques combined with machine learning it has been possible to predict these digits to a 98% accuracy!
+By using computer vision techniques combined with machine learning it has been possible to predict these digits to a 98% accuracy! GUI model shows an accuracy of around 80%.
 
 
 ## Data Source 
