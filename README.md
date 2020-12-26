@@ -24,4 +24,4 @@ The SVC with tuned parameters and five fold cross validation managed to achieve 
 
 ## GUI
 
-Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is overfitted and therefore doesnt generalize well as its variance in cross validation scores was tight. The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
+Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is overfitted, and therefore, doesnt generalize well as its variance in cross validation scores was tight. The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
