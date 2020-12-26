@@ -34,7 +34,7 @@ Once the model had been developed it was pickled and a simple GUI was built to e
 
 Testing Robustness for "2":
 <p align="center">
-  <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_1.PNG" width=1500>
+  <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_1.PNG" width=100>
 </p>
 
 
