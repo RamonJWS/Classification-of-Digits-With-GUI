@@ -1,12 +1,16 @@
 <h1 align='center'> Classification of Handwritten Digits and GUI for Testing </h1>
 
+## Summary
+
+Using a SVC to classify handwritten digits to a 98.2% accuracy, this model was then deployed and used in an interactive GUI which can be seen here: https://www.youtube.com/watch?v=lJp8DtptZk4
+
 ## Project Motivation
 
 Often information about people is collected using forms which require the user to manually fill in questions and contact information. This information is then manually entered into a system to allow for the full use of the data provided. This is a long an tedious task which cost businesses, and ensure consistent boredom for their employees. 
 
 One step in solving this problem is to create a system that can automatically read these characters, is to develop a system capable of readin digits. Perhaps in the future I will also look at including alphabetical classification.
 
-By using computer vision techniques combined with machine learning it has been possible to predict these digits to a 98% accuracy!
+By using computer vision techniques combined with machine learning it has been possible to predict these digits to a 98% accuracy! GUI model shows an accuracy of around 80%.
 
 
 ## Data Source 
@@ -24,4 +28,18 @@ The SVC with tuned parameters and five fold cross validation managed to achieve 
 
 ## GUI
 
-Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is overfitted, and therefore, doesnt generalize well as its variance in cross validation scores was tight. The models reduced performace could be because the method to draw digits onto the frame doesnt represent actual handwritten digits very well.
+Once the model had been developed it was pickled and a simple GUI was built to enable users to draw digits and watch the model predict them. The model showed a 98.2% accuracy in the jupyter notebook, however, in the GUI the model accuracy is much lower, around 70-80%. I don't think the model is unable to generalize well as its variance in cross validation was small (+/-0.5%). The models reduced performace could be because the method to draw digits onto the frame doesnt accurately represent handwritten digits.
+
+## Model Robustness
+
+Testing Robustness for "2":
+
+<img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/2_3.PNG" width=250>
+
+Testing Robustness for "7":
+
+<img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/7_3.PNG" width=250>
+
+Testing Robustness for "3":
+
+<img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_1.PNG" width=250/> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_2.PNG" width=250> <img src="https://github.com/RamonJWS/Classification-of-Digits-With-GUI/blob/main/Images%20for%20Robustness/3_3.PNG" width=250>
